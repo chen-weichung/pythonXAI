@@ -11,6 +11,7 @@ st.write("輸入成績")
 a = st.number_input("請輸入成績", step=1, min_value=0, max_value=100, value=50)
 if a >= 90:
     st.write("A")
+    st.balloons()
 elif a >= 80:
     st.write("B")
 elif a >= 70:
