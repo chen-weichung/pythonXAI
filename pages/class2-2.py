@@ -20,6 +20,7 @@ elif a >= 60:
     st.write("D")
 else:
     st.write("F")
+    st.snow()
 
 import streamlit as st
 
