@@ -9,9 +9,7 @@ import streamlit as st
 st.title("練習")
 st.write("輸入成績")
 a = st.number_input("請輸入成績", step=1, min_value=0, max_value=100, value=50)
-if a == 100:
-    st.write("滿A+")
-elif a <= 99 and a >= 90:
+if a >= 90:
     st.write("A")
 elif a >= 80:
     st.write("B")
