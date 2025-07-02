@@ -1,12 +1,31 @@
-print([])  # 這是一個空的list
-print([1, 2, 3])  # 這是一個有三個元素的list
-print([1, 2, 3, "a", "b", "c"])  # 這是一個有六個元素的list
-print([1, 2, 3, ["a", "b", "c"]])  # 這是一個有四個元素的list
-print([1, True, "a", 1.23])  # 這是一個有四個元素的list
+# print([])  # 這是一個空的list
+# print([1, 2, 3])  # 這是一個有三個元素的list
+# print([1, 2, 3, "a", "b", "c"])  # 這是一個有六個元素的list
+# print([1, 2, 3, ["a", "b", "c"]])  # 這是一個有四個元素的list
+# print([1, True, "a", 1.23])  # 這是一個有四個元素的list
 
-# list 讀取元素，元素的index從0開始
+# # list 讀取元素，元素的index從0開始
+# L = [1, 2, 3, "a", "b", "c"]
+# print(L[0])  # 1
+# print(L[1])  # 2
+# print(L[2])  # 3
+# print(L[3])  # "a"
+
+L = [80, 95, 78, 60, 55]
+a = L[1]  # 95
+L = [64, 73, 52, 34, 95]
+b = L[1]  # 73
+print((a + b) / 2)  # 84.0
+
 L = [1, 2, 3, "a", "b", "c"]
-print(L[0])  # 1
-print(L[1])  # 2
-print(L[2])  # 3
-print(L[3])  # "a"
+# 就是取index 0到最後，每次取2個元素所以是[1,3,"b"]
+print(L[::2])
+# 就是取index1-3的元素，不包含index 4，所以是[2,3,"a"]
+print(L[1:4])
+# 就是取index1-3的元素，不包含index 4，並且每次取2個元素，所以是[2,"a"]
+print(L[1:4:2])
+# 跟range 一樣的用法，只是符號不同
+
+# list取長度，也就是list裡面有幾個元素，不是index的最大值
+L = [1, 2, 3, "a", "b", "c"]
+print(len(L))  # 6
