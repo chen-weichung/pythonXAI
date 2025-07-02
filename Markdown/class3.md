@@ -1,9 +1,3 @@
-import streamlit as st
-
-with st.expander("class2.課堂筆記"):
-st.markdown(
-"""
-
 # 🧠 Python 筆記整理（高中生版本）
 
 ## 🔹 1. Call by Value vs Call by Reference
@@ -210,5 +204,4 @@ print((a + b) / 2)  # 84.0
 | `len()`             | 算元素總數                                    |
 | `L[start:end:step]` | 切片取資料                                    |
 
-    """
     )
