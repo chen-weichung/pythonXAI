@@ -356,8 +356,8 @@ if st.button("按我一下", key="snow"):
     """
     )
     with st.expander("class3.課堂筆記"):
-    st.markdown(
-        """
+        st.markdown(
+            """
 # 🧠 Python 筆記整理（高中生版本）
 
 ## 🔹 1. Call by Value vs Call by Reference
@@ -565,7 +565,7 @@ print((a + b) / 2)  # 84.0
 | `L[start:end:step]` | 切片取資料                                    |
 
 """
-    )
+        )
 with st.expander("class3.課堂筆記"):
     st.markdown(
         """
@@ -777,4 +777,3 @@ print((a + b) / 2)  # 84.0
 
 """
     )
-
