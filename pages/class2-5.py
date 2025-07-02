@@ -29,3 +29,13 @@ print(L[1:4:2])
 # list取長度，也就是list裡面有幾個元素，不是index的最大值
 L = [1, 2, 3, "a", "b", "c"]
 print(len(L))  # 6
+
+# list走訪元素
+# 可以透過取得index的方式來找到list中的資料
+# 也可以直接把list當作一個範圍來取的資料
+# 這兩種方式都可以，但是看使用的情境是否會需要index來決定要用哪一種方式
+L = [1, 2, 3, "a", "b", "c"]
+for i in range(len(L)):
+    print(L[i])
+for i in L:
+    print(i)
