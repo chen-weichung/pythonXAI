@@ -39,3 +39,12 @@ for i in range(len(L)):
     print(L[i])
 for i in L:
     print(i)
+
+
+name = ["Amy", "Mandy", "Peter"]
+for i in range(len(name)):
+    print(f"第{i + 1}號是{name[i]}")
+
+for i in name:
+    a = name.index(i)
+    print(f"第{a+1}號是{i}")
