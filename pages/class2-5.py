@@ -48,3 +48,9 @@ for i in range(len(name)):
 for i in name:
     a = name.index(i)
     print(f"第{a+1}號是{i}")
+
+
+fruits = ["蘋果", "香蕉", "鳳梨"]
+number = [3, 5, 6]
+for i in range(len(fruits)):
+    print(f"{fruits[i]}有{number[i]}個")

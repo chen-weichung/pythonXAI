@@ -48,5 +48,3 @@ else:
 # 連續使用if跟使用if elif else的差別
 # elif可以排除前面有判斷過的條件，所以縮短判斷條件的複雜度，也節省了時間
 # 但是如果是連續使用if，則每個條件都會被判斷一次，可能會浪費時間
-
-st.number_input("請輸入一個數字", min_value=0, max_value=100, value=50)
