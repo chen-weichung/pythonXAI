@@ -9,12 +9,13 @@ st.markdown(
     """
 這是一個用 st.markdown 顯示的字串，可以處理 Markdown 語法。
 例如：
-粗體文字
-斜體文字
-連結
-代碼塊：
-print("Hello, Streamlit!")
-
+* **粗體文字**
+* *斜體文字*
+* [連結](https://www.example.com)
+* 程式碼:
+'''python
+print("hello world")
+'''
 """
 )
 
