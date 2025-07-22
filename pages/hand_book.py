@@ -777,3 +777,9 @@ print((a + b) / 2)  # 84.0
 
 """
     )
+with st.expender("class4.課堂筆記"):
+    st.write(
+        """
+
+"""
+    )
