@@ -18,6 +18,6 @@ print(filename.endswith(".md"))  # True
 
 import os
 
-folderPath = "markdown"
-files = os.listdir(folderPath)
+folder_Path = "markdown"
+files = os.listdir(folder_Path)
 print(files)
