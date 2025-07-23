@@ -1,29 +1,23 @@
-# import streamlit as st
+# r讀檔案，檔案不存在，回報錯誤
+# w寫檔案，檔案不存在，創建檔案
+# a续寫檔案，檔案不存在，創建檔案
+f = open("pages/class1-1.py", "r", encoding="utf-8")  # 開啟檔案
+content = f.read()  # 讀取內容
+print(content)  # 印出內容
+f.close()  # 關閉檔案
 
-# st.write("輸入成績")
-# a = st.number_input("輸入你的成績", step=1, min_value=0, max_value=100)
-# if a >= 90:
-#     st.write("A")
-# elif a >= 80:
-#     st.write("B")
-# elif a >= 70:
-#     st.write("C")
-# elif a >= 60:
-#     st.write("D")
-# else:
-#     st.write("F")
+print("-" * 10)
 
-import streamlit as st
+with open("pages/class1-1.py", "r", encoding="utf-8") as f:
+    content = f.read()
+    print(content)  # 印出內容
+# 不用寫f.ciose(),with自動幫你關好
 
-st.write("請輸入一個數字")
-a = st.number_input("請輸入一個整數", step=1, min_value=0)
-total = ""
-for i in range(1, a + 1):
-    c = " " * (a - i)
-    d = "*" * (2 * i - 1)
-    total += f"{c}{d}\n"
-for i in range(1, a + 1):
-    e = " " * (a - 1) + "*"
-    total += f"{e}\n"
-    st.markdown(f"```\n{total}```")
-# \n是換行
+filename = "class1.md"
+print(filename.endswith(".md"))  # True
+
+import os
+
+folderPath = "markdown"
+files = os.listdir(folderPath)
+print(files)
