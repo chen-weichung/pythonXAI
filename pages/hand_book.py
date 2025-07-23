@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-file_path = "markdown"
+file_path = "Markdown"
 files = os.listdir(file_path)
 for file in files:
     if file.endswith(".md"):
