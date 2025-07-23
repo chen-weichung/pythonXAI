@@ -1,9 +1,18 @@
 import streamlit as st
 
 st.title("點餐機")
-food = st.text_input("請輸入餐點")
-st.title("購物籃")
-st.write("購物籃")
 col1, col2 = st.columns(2)
-col1.button("加入")
-col2.button("移除")
+food = col1.text_input("請輸入餐點")
+if col2.button("加入", key="add"):
+    st.session_state.order.append(food)
+    st.rerun()
+if "order" not in st.session_state:
+    st.session_state.order = []
+
+st.write("購物籃:")
+for i in range(len(st.session_state.order)):
+    col3, col4 = st.columns(2)
+    col3.write(st.session_state.order[i])
+    if col4.button("刪除", key=i):
+        st.session_state.order.pop(i)
+        st.rerun()
