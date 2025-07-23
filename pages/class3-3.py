@@ -32,3 +32,4 @@ if "var1" not in st.session_state:
 st.write(f"var1={st.session_state.var1}")
 if st.button("add 1 to var1"):
     st.session_state.var1 = st.session_state.var1 + 1
+    st.rerun()
