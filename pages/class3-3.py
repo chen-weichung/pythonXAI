@@ -15,3 +15,20 @@ with col4:
 with col5:
     st.write("欄位5")
     st.write("按鈕5")
+
+st.title("文字輸入元件")
+text = st.text_input("輸入文字")
+st.write("你輸入的文字是:", text)
+
+st.title("session state")
+ans = 1
+st.write(f"ans={ans}")
+if st.button("加1"):
+    ans = ans + 1
+st.write(f"ans={ans}")
+
+if "var1" not in st.session_state:
+    st.session_state.var1 = 1
+st.write(f"var1={st.session_state.var1}")
+if st.button("add 1 to var1"):
+    st.session_state.var1 = st.session_state.var1 + 1
