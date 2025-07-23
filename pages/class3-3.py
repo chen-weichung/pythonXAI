@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("欄位元件")
-col1, col2 = st.coiumns(2)
+col1, col2 = st.columns(2)
 col1.button("按鈕1")
 col2.button("按鈕2")
 
