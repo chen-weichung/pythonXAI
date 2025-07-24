@@ -41,4 +41,22 @@ for name, detail in st.session_state.products.items():
                 time.sleep(1)
                 st.rerun()
         index += 1
-st.title
+st.title("新增商品庫存")
+col1, col2 = st.columns(2)
+with col1:
+    selected_product = st.selectbox(
+        "請選擇商品", list(st.session_state.products.keys())
+    )
+with col2:
+    add_num = st.number_input(
+        "請輸入庫存數量", min_value=1, max_value=100, value=1, step=1
+    )
+    if st.button("新增庫存"):
+        st.session_state.products[selected_product]["stock"] += add_num
+        st.success(f"已新增{add_num}個{selected_product}的庫存")
+        time.sleep(1)
+        st.rerun()
+
+st.write("目前商品庫存")
+for name, detail in st.session_state.products.items():
+    st.write(f"{name}: {st.session_state.products[name]['stock']}")
